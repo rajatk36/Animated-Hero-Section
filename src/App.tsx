@@ -5,6 +5,7 @@ const stats = [
   { value: '58%', label: 'Increase in pickup point use' },
   { value: '27%', label: 'Increase in repeat sessions' },
   { value: '40%', label: 'Decrease in support calls' },
+  { value: '24%', label: 'Decreased in customer phone calls'}
 ];
 
 const App: React.FC = () => {
@@ -21,7 +22,6 @@ const App: React.FC = () => {
     }
   };
 
-  // Initial load animation
   useEffect(() => {
     const ctx = gsap.context(() => {
       const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
@@ -62,7 +62,7 @@ const App: React.FC = () => {
     return () => ctx.revert();
   }, []);
 
-  // Scroll-linked interaction
+
   useEffect(() => {
     const section = heroSectionRef.current;
     const lane = laneRef.current;
@@ -185,14 +185,12 @@ const App: React.FC = () => {
       <section ref={heroSectionRef} className="hero-scroll-section">
         <div ref={heroRef} className="hero-sticky">
           <div className="hero-background-glow" />
-
           <div className="hero-inner">
-            
             <div className="hero-lane-wrapper">
               <div ref={laneRef} className="hero-lane">
                 <div ref={headlineStripRef} className="hero-headline-strip">
                   <p className="hero-headline-text">
-                    W E L C O M E I T Z F I Z Z 
+                    W E L C O M E I AM RAJAT 
                   </p>
                 </div>
               </div>

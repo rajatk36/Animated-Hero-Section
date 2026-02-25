@@ -26,9 +26,8 @@ body {
 }
 
 .hero-scroll-section {
-  position: absolute;
+  position: relative;
   height: 260vh;
-  width: 100%;
   background-color: #0a0a0a;
 }
 
@@ -108,7 +107,7 @@ body {
 .hero-headline-text {
     position: relative;
     left: 50%;
-    transform: translateX(130%);
+    transform: translateX(140%);
   white-space: nowrap;
   border-radius: 999px;
   background-color: rgba(16, 185, 129, 0.9);
@@ -119,17 +118,25 @@ body {
   color: #020617;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .hero-headline-text {
     font-size: 2.25rem;
+    transform: translateX(50%);
   }
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1100px) {
   .hero-headline-text {
     font-size: 2.75rem;
+    transform: translateX(70%);
   }
 }
+@media (max-width: 1600px) {
+    .hero-headline-text {
+      font-size: 2.25rem;
+      transform: translateX(150%);
+    }
+  }
 
 .hero-indicator {
   position: absolute;
